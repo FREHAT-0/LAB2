@@ -1,0 +1,10 @@
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
+from app.main import model
+
+
+def test_model_loaded():
+    assert model is not None
